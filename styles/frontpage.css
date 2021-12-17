@@ -1,0 +1,51 @@
+@font-face{
+    font-family:thinans;
+    src:url('../fonts/가는안상수체.ttf');
+    font-weight:normal;
+    font-style:normal;}
+html{
+    color: white;
+    background-color: #000000;
+    font-size:10px;}
+h1{
+    text-align: center;
+    font-size: 2.0rem;}
+
+h3{
+    font-family: thinans, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+}
+h2{
+    font-family: thinans, sans-serif;
+    font-size:1.3rem;
+    text-align: center;
+    }
+div {
+    width:250px;
+    height:300px;
+    transform: translate(-50%, -50%);
+    position:relative;
+    left:50vw;
+    top:50vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    line-height:100px;
+    text-align: center;
+    font-family:consolas,monospace;
+    font-size:1.3rem;
+    border: 1px #333333 solid
+}
+hr{
+    border: 0;
+    width: 50%;
+    height: 1px;
+    background:#333333;
+}
+.inputbox{
+    background-color:#000000;
+    border: #333333 1px solid;
+    color:#cccccc;
+}
