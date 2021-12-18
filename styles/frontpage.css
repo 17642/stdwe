@@ -32,7 +32,6 @@ div {
     display:flex;
     align-items:center;
     justify-content: center;
-    line-height:100px;
     text-align: center;
     font-family:consolas,monospace;
     font-size:1.3rem;
@@ -49,3 +48,19 @@ hr{
     border: #333333 1px solid;
     color:#cccccc;
 }
+a:link {
+    color : pink;
+    text-decoration: none;
+  }
+  a:visited {
+    color : black;
+    text-decoration: none;
+  }
+  a:hover {
+    color : red;
+    text-decoration: underline;
+  }
+  a:active {
+    color : green;
+    text-decoration: none;
+  }
