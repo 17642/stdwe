@@ -10,5 +10,6 @@ if($pwds!=$pwd){
     exit;
 }
 session_start();
+$_SESSION['user']=TRUE
 ?>
 <meta http-equiv='refresh' content='0;url=main.html'>
