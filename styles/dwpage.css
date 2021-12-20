@@ -1,0 +1,12 @@
+@font-face{
+    font-family:consolas;
+    src:url("../fonts/consola.ttf");
+    font-weight:normal;
+    font-style:normal;
+}
+html{
+    color:white;
+    background-color:black;
+    font-size:10px;
+    font-family:consolas,monospace;
+}
