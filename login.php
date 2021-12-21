@@ -6,10 +6,10 @@ $pwds=fgets($spwd);
 fclose($spwd);
 if($pwds!=$pwd){
     echo "<script>alert('I don't think this password is correct')</script>";
-    history.back();
+    header('location:',$_SERVER['HTTP_REFFER']);
     exit;
 }
 session_start();
 $_SESSION['user']=TRUE
 ?>
-<meta http-equiv='refresh' content='0;url=main.html'>
+<meta http-equiv='refresh' content='0;url=./main.php'>
