@@ -1,0 +1,2 @@
+    dbkey:1029a382
+keypasspharse:sign apple signiture cert
