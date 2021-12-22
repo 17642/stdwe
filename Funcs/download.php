@@ -42,6 +42,6 @@ function getCurrentFilelist($dir){
                     $ccount=$ccount+1;
                 }?></div>
         <h4><form action="./upload.php" method="post" enctype="multipart/form-data"><input type="file" name="pfile">-><input type="submit" value="Upload"></h4>
-        <p><a href="../logout.php"target="_self">Sign Out</a></p>
+        <p><a href="../logout.php"target="_self">Sign Out</a>/<a href="../main.php"target="_self">Main page</a></p>
     </body>
 </html>
