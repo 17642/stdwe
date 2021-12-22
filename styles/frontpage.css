@@ -1,11 +1,11 @@
 @font-face{
     font-family:thinans;
-    src:url('../fonts/가는안상수체.ttf');
+    src:url('../fonts/가는안상수체.woff');
     font-weight:normal;
     font-style:normal;}
 @font-face{
         font-family:consolas;
-        src:url("../fonts/consola.ttf");
+        src:url("../fonts/consola.woff");
         font-weight:normal;
         font-style:normal;
 }
