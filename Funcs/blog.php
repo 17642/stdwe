@@ -12,7 +12,7 @@ $totalcnt=mysqli_num_rows(mysqli_query($ddbb,"SELECT * FROM pages"));
 $rowsPage=20;
 $totalPage=ceil($totalcnt/$rowsPage);
 if($totalPage==0) ++$totalPage;
-if(!isset($_GET["Index"]))$_GET["Index"]=0;
+if(!isset($_GET["index"]))$_GET["index"]=1;
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,39 @@ if(!isset($_GET["Index"]))$_GET["Index"]=0;
     </head>
     <body>
         <h1>Pages</h1>
-        >
+        <h2><?php echo "$totalcnt"; ?> Page(s) Found.<br></h2>
+        <h3>
+            <tr>
+                <td width="50">No.</td>
+                <td width="550">Title</td>
+                <td width="150">Date</td>
+            </tr>
+                <?php
+                $s=0;
+                while($s){
+                    echo "<tr>";
+                    echo "<td width='50'></td>";
+                    echo "<td width='550'><a href='../pages/view.php?num=$'></td>";
+                    echo "<td width='150'></td>";
+                    echo "</tr>";
+                }
+                ?>
+        </h3>
+        <h5>
+        <?php
+        $t=1;
+        while($t<$totalPage+1){
+            if($t==1){echo "|";}
+            if($t==$_GET["index"]){echo "-$t";}
+            else{
+                echo "-<a href='./blog.php?index=$t'>$t</a>";
+            }if($t==$totalPage){echo "-|";}
+            $t=$t+1;
+        }
+        
+        ?>
+        </h5>
+
         <p><a href="../logout.php">Sign Out</a>/<a href="../main.php" target="_self">main</a></p>
     </body>
 </html>

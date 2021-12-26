@@ -1,8 +1,9 @@
 page:
-Title/ -> text
-Content/ -> text/<imglink="./img"> -><img src="imglink" alt="
+id -> int
+title/ -> text
+content/ -> text/<imglink="./img"> -><img src="imglink" alt="
 It seems that something failed to load." width="30%" height="30%"> 
 <adiolink="./mp3"> -> <audio controls src="adiolink" type="audio.mpeg">
 It seems that something failed to load.</audio>
-Time/ -> unsigned int
+time/ -> unsigned int
 
