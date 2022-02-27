@@ -33,13 +33,14 @@ if(!isset($_GET["index"]))$_GET["index"]=1;
                 <td width="150">Date</td>
             </tr>
                 <?php
-                $s=0;
-                while($s){
+                $s=($_GET["index"]-1)*$rowsPage;
+                while($s<$totalpages||$s<$_GET["index"]*$rowsPage){
                     echo "<tr>";
-                    echo "<td width='50'></td>";
-                    echo "<td width='550'><a href='../pages/view.php?num=$'></td>";
+                    echo "<td width='50'>$s</td>";
+                    echo "<td width='550'><a href='../pages/view.php?num=$s'></td>";
                     echo "<td width='150'></td>";
                     echo "</tr>";
+                    $s=$s+1
                 }
                 ?>
         </h3>
