@@ -35,10 +35,11 @@ if(!isset($_GET["index"]))$_GET["index"]=1;
                 <?php
                 $s=($_GET["index"]-1)*$rowsPage;
                 while($s<$totalpages||$s<$_GET["index"]*$rowsPage){
+                    $date=mysqli_query(SELECT * from pages where id=$s);
                     echo "<tr>";
                     echo "<td width='50'>$s</td>";
-                    echo "<td width='550'><a href='../pages/view.php?num=$s'></td>";
-                    echo "<td width='150'></td>";
+                    echo "<td width='550'><a href='../pages/view.php?num=$s'></a></td>";
+                    echo "<td width='150'>$date</td>";
                     echo "</tr>";
                     $s=$s+1
                 }
@@ -59,6 +60,7 @@ if(!isset($_GET["index"]))$_GET["index"]=1;
         ?>
         </h5>
 
-        <p><a href="../logout.php">Sign Out</a>/<a href="../main.php" target="_self">main</a></p>
+        <p><form action="./newpage.php" method="">
+            <br><a href="../logout.php">Sign Out</a>/<a href="../main.php" target="_self">main</a></p>
     </body>
 </html>
