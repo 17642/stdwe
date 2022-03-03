@@ -23,6 +23,10 @@ th,td{
 th{
   background-color:#222222;
 }
+h4{
+  font-size:1.5rem;
+  text-align:center;
+}
 a:link {
     color : pink;
     text-decoration: none;
