@@ -13,9 +13,26 @@ if($ddbb->connect_error){
       ?>
     </title>
     <meta charset="utf-8">
-    <--!-->
+    <link href="../styles/bpages.css" rel="stylesheet" type="text/css">
     <meta name="robots" content="noindex">
   </head>
   <body>
+    <h1>
+      pages
+    </h1>
+    <br>
+    <h2>
+      <?php
+      echo "No.$_GET["num"]";
+      ?>
+    </h2>
+    <br>
+    <h4>
+    </h4>
+    <br>
+    <p>
+      <br>
+      
+    </p>
   </body>
 </html>

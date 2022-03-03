@@ -7,3 +7,7 @@ It seems that something failed to load." width="30%" height="30%">
 It seems that something failed to load.</audio>
 time/ -> unsigned int
 
+DELETE FROM pages WHERE id=$_GET["num"]
+UPDATE pages SET id=id-1 WHERE id>$_GET["num"]
+
+
