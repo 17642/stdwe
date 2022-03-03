@@ -12,5 +12,10 @@ if($ddbb->connect_error){
       echo "post $_GET["num"]";
       ?>
     </title>
+    <meta charset="utf-8">
+    <--!-->
+    <meta name="robots" content="noindex">
   </head>
+  <body>
+  </body>
 </html>
