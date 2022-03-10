@@ -38,8 +38,8 @@ if(!isset($_GET["index"]))$_GET["index"]=1;
                     $date=mysqli_query(SELECT * from pages where id=$s);
                     echo "<tr>";
                     echo "<td width='50'>$s</td>";
-                    echo "<td width='550'><a href='../pages/view.php?num=$s'></a></td>";
-                    echo "<td width='150'>$date</td>";
+                    echo "<td width='550'><a href='../pages/view.php?num=$date['title']></a></td>";
+                    echo "<td width='150'>$date['date']</td>";
                     echo "</tr>";
                     $s=$s+1
                 }
