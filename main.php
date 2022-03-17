@@ -16,6 +16,7 @@ require("./head.php");
         <hr>
         <div><a href="./Funcs/Online_storage.html"target="_self">Online storage</a><br><hr>
         <a href="./Funcs/blog.php"target="_self">Posts</a><br><hr>
+        <a href="./Funcs/Fplayer.php"target="_self">Fplayer</a><br><hr>
         <a href="./logout.php"target="_self">Sign Out</a><hr><br><br>
         </div>
         
