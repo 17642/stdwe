@@ -1,8 +1,19 @@
 <?php
 require("../head.php");
-$ddbb=new mysqli("localhost","root","1029a382","./pages.db");
-if($ddbb->connect_error){
-    die("connect failed".$conn->connect_error);
-    exit;
-}
 ?>
+<!DOCTYPE html>
+
+<html lang='ko'>
+    <head>
+        <meta charset="utf-8">
+        <title>PAGE_TEST</title>
+        <meta name="robots" content="noindex">
+    </head>
+    <body>
+        <form method="post" action="./newpagefunc.php">
+            Title:<br><input type='text' name='title'><br>
+            Contents:<br><input type='text' name='imt'><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
