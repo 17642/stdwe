@@ -37,8 +37,9 @@ function getCurrentFilelist($dir){
         <div><tr><td>Index</td><td>Name</td><td>Size(KB)</td></tr>
             <?php echo "<table>";
                 while($ccount<$count){
+                    $n=$F_LIST[$ccount];
                     $fsize=filesize($DIR_PATH.$F_LIST[$ccount])/1024;
-                    echo"<tr><td>$ccount</td><td><a href='_DIR_PATH$R[$ccount]' download='$R[$ccount]'>$R[$ccount]</a></td><td>$fsize</td></tr>";
+                    echo"<tr><td>$ccount</td><td><a href='_DIR_PATH$n' download='$n'>$n</a></td><td>$fsize</td></tr>";
                     $ccount=$ccount+1;
                 }?></div>
         <h4><form action="./upload.php" method="post" enctype="multipart/form-data"><input type="file" name="pfile">-><input type="submit" value="Upload"></h4>

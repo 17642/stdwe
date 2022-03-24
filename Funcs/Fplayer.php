@@ -39,19 +39,21 @@ function getCurrentFilelist($dir){
     <h2><?php echo "$count files found.";?></h2>
     <h3><?php
     if(isset($_GET["name"])){
-        echo "<object type='application/x-shockwave-flash' data='$_F_PATH/$_GET['name']' width='1000' height='500'>";
-        echo "<param name='fp' value='$_F_PATH/$_GET['name']/>"
-        echo "<param name='allowScriptAccess' value='always'/></object>"
+        $n=$_GET["name"];
+        echo "<object type='application/x-shockwave-flash' data='$_F_PATH/$n' width='1000' height='500'>";
+        echo "<param name='fp' value='$_F_PATH/$n/>";
+        echo "<param name='allowScriptAccess' value='always'/></object>";
     }
     ?>
     </h3>
     <div><tr><td>Index</td><td>Name</td><td>Size(KB)</td></tr>
             <?php echo "<table>";
                 while($ccount<$count){
+                    $n=$F_LIST[$ccount];
                     $fsize=filesize($_F_PATH.'/'.$F_LIST[$ccount])/1024;
-                    echo"<tr><td>$ccount</td><td><a href='./Fplayer.php?name=$F_LIST[$ccount]'>$F_LIST[$ccount]</a></td><td>$fsize</td></tr>";
+                    echo"<tr><td>$ccount</td><td><a href='./Fplayer.php?name=$n'>$n</a></td><td>$fsize</td></tr>";
                     $ccount=$ccount+1;
-                }?></div>
+                }?></table></div>
                 <p><a href="../logout.php"target="_self">Sign Out</a>/<a href="../main.php"target="_self">Main page</a></p>
     </body>
 </html>

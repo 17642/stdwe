@@ -35,14 +35,17 @@ if(!isset($_GET["index"]))$_GET["index"]=1;
                 <?php
                 $s=($_GET["index"]-1)*$rowsPage;
                 while($s<$totalpages||$s<$_GET["index"]*$rowsPage){
-                    $date=mysqli_query(SELECT * from pages where id=$s);
+                    $date=mysqli_query($ddbb,"SELECT * from pages where id=$s");
+                    $k=$date['date'];
+                    $d=$date['title'];
                     echo "<tr>";
                     echo "<td width='50'>$s</td>";
-                    echo "<td width='550'><a href='../pages/view.php?num=$date['title']></a></td>";
-                    echo "<td width='150'>$date['date']</td>";
+                    echo "<td width='550'><a href='../pages/view.php?num=$d></a></td>";
+                    echo "<td width='150'>$k</td>";
                     echo "</tr>";
-                    $s=$s+1
+                    $s=$s+1;
                 }
+                mysqli_close($ddbb);
                 ?>
         </h3>
         <h5>
