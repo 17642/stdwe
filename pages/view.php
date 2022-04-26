@@ -10,6 +10,7 @@ if($ddbb->connect_error){
   <head>
     <title><?php
     $p=$_GET["num"];
+    
       echo "post $p";
       $date=mysqli_query($ddbb,"SELECT * from pages where id=$p");
       $title=$date["title"];

@@ -12,7 +12,7 @@ require("../head.php");
     <body>
         <form method="post" action="./newpagefunc.php">
             Title:<br><input type='text' name='title'><br>
-            Contents:<br><input type='text' name='imt'><br>
+            Contents:<br><textarea name="imt" placeholder="Input text."></textarea>
             <input type="submit">
         </form>
     </body>
